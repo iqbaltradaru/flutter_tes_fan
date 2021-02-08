@@ -81,9 +81,7 @@ class _TableScreenPageState extends State<TableScreenPage> {
     return Container(
       width: double.infinity,
       margin: EdgeInsets.all(10),
-      child: Expanded(
-        child: createTable(),
-      ),
+      child: createTable(),
     );
   }
 
@@ -94,10 +92,11 @@ class _TableScreenPageState extends State<TableScreenPage> {
       for (int ii = 0; ii < _listColumn; ++ii) {
         colums.add(TableCell(
           child: Container(
+            padding: EdgeInsets.all(5),
             margin: EdgeInsets.all(2),
             color: Colors.grey,
-            height: 50,
-            width: 50,
+            height: 30,
+            width: 30,
             child: Text("${i},${ii}"),
           ),
         ));
